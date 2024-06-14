@@ -1,0 +1,18 @@
+/* ViewPDF.css */
+
+.pdf-viewer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-viewer .pdf-container {
+    height: 750px;
+    overflow: auto;
+}
+
+.pdf-viewer .pdf-container canvas {
+    width: 100%;
+    height: auto;
+}

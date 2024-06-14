@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'));
 
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/pdfs', require('./routes/pdfRoutes'));
