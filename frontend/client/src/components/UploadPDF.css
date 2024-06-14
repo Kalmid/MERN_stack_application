@@ -1,0 +1,29 @@
+/* UploadPDF.css */
+
+.upload-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.upload-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.upload-container input {
+    margin-bottom: 10px;
+}
+
+.upload-container button {
+    align-self: flex-end;
+}
+
+.upload-container .message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+}

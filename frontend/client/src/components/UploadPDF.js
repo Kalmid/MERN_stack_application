@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { uploadPDF } from '../services/pdfService';
+import './UploadPDF.css';
 
 const UploadPDF = () => {
     const [file, setFile] = useState(null);
@@ -34,9 +36,9 @@ const UploadPDF = () => {
     };
 
     return (
-        <div>
+        <div className="upload-container">
             <h2>Upload PDF</h2>
-            {message && <p>{message}</p>}
+            {message && <p className="message">{message}</p>}
             <form onSubmit={onSubmit}>
                 <div>
                     <input type="file" onChange={onFileChange} />

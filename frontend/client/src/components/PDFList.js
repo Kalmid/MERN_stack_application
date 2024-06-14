@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './PDFList.css';
 
 const PDFList = () => {
     const [pdfs, setPDFs] = useState([]);
@@ -21,7 +22,7 @@ const PDFList = () => {
     }, []);
 
     return (
-        <div>
+        <div className="pdf-list">
             <h2>Uploaded PDFs</h2>
             <ul>
                 {pdfs.map((pdf) => (
